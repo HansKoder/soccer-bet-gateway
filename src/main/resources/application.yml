@@ -12,6 +12,10 @@ spring:
           uri: http://localhost:9091
           predicates:
           - Path=/api/football-teams/**
+        - id: ms-match
+          uri: http://localhost:9092
+          predicates:
+            - Path=/api/matches/**
 management:
   endpoints:
     web:
