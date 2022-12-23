@@ -16,6 +16,10 @@ spring:
           uri: http://localhost:9092
           predicates:
             - Path=/api/matches/**
+        - id: ms-bet
+          uri: http://localhost:9093
+          predicates:
+            - Path=/api/bets/**
 management:
   endpoints:
     web:
